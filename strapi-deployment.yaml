@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: strapi-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: strapi
+  template:
+    metadata:
+      labels:
+        app: strapi
+    spec:
+      containers:
+        - name: strapi
+          image: localhost:32000/strapi-app:dev-0.07
+          env:
+            - name: HOST
+              value: "0.0.0.0"
+            - name: PORT
+              value: "1337"
+          ports:
+            - containerPort: 3001
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: strapi-service
+spec:
+  selector:
+    app: strapi
+  ports:
+    - name: http
+      port: 1337
+      targetPort: 1337
+      nodePort: 31000
+  type: NodePort
+
+

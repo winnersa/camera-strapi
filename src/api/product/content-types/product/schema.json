@@ -50,6 +50,9 @@
     },
     "averageRating": {
       "type": "integer"
+    },
+    "line": {
+      "type": "string"
     }
   }
 }
