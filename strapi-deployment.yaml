@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: strapi
-          image: localhost:32000/strapi-app:dev-0.07
+          image: localhost:32000/strapi-app:dev-0.09
           env:
             - name: HOST
               value: "0.0.0.0"

@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * order service
+ * feature service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::order.order');
+module.exports = createCoreService('api::feature.feature');

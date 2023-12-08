@@ -19,7 +19,7 @@
       "type": "text"
     },
     "price": {
-      "type": "decimal",
+      "type": "biginteger",
       "required": true
     },
     "image": {
@@ -53,6 +53,11 @@
     },
     "line": {
       "type": "string"
+    },
+    "feature": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::feature.feature"
     }
   }
 }

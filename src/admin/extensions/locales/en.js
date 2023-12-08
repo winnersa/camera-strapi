@@ -440,7 +440,7 @@ export default {
   "app.components.HomePage.welcome": "Welcome on board 👋",
   "app.components.HomePage.welcome.again": "Welcome 👋",
   "app.components.HomePage.welcomeBlock.content": "Congrats! You are logged as the first administrator. To discover the powerful features provided by Strapi, we recommend you to create your first Content type!",
-  "app.components.HomePage.welcomeBlock.content.again": "OnSafe manager",
+  "app.components.HomePage.welcomeBlock.content.again": "OnSafe Test",
   "app.components.HomePage.welcomeBlock.content.issues": "issues.",
   "app.components.HomePage.welcomeBlock.content.raise": " or raise ",
   "app.components.ImgPreview.hint": "Drag & drop your file into this area or {browse} for a file to upload",

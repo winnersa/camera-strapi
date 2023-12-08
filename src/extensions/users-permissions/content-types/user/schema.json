@@ -65,12 +65,6 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "orders": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::order.order",
-      "mappedBy": "user"
-    },
     "reviews": {
       "type": "relation",
       "relation": "oneToMany",
@@ -81,12 +75,6 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::cart.cart",
-      "mappedBy": "user"
-    },
-    "billings": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::billing.billing",
       "mappedBy": "user"
     }
   }

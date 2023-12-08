@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * billing controller
+ * feature controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::billing.billing');
+module.exports = createCoreController('api::feature.feature');
